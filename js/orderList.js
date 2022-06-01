@@ -122,7 +122,7 @@ function deleteProduct(deleteID) {
 
         localStorage.removeItem(key);
 
-        window.location.href = "orderList.html";
+        window.location.href = "orderList";
 
     });
 

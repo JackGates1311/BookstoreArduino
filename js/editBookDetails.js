@@ -106,7 +106,7 @@ function editBookInformation(ID)
 
                     '<button type="button" id="btnDeleteDialog" data-toggle="modal" data-target="#deleteConfirmation" class="btn btn-primary float-right ml-2">Remove</button>' +
 
-                    '<a type="button" class="btn btn-secondary float-right ml-2" href="bookDetails.html?id=' + bookID + '">Cancel</a>' +
+                    '<a type="button" class="btn btn-secondary float-right ml-2" href="bookDetails?id=' + bookID + '">Cancel</a>' +
 
                     '</div> <p></p> </form>'
                 );

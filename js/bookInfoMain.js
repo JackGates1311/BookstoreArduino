@@ -91,9 +91,9 @@
 
                 '<div class="card">' + '<div class="card-body text-right">' +
 
-                '<a href="bookDetails.html?id=' + bookID + '" onclick="#bookDetails">' + '<img class="card-img-top" src="' + slika +
+                '<a href="bookDetails?id=' + bookID + '" onclick="#bookDetails">' + '<img class="card-img-top" src="' + slika +
 
-                '" hegiht="350" width="350"/>' + '</a>' + '<a href="bookDetails.html?id=' + bookID + '" onclick="#bookDetails" class="card-title">' + naziv + '</a>' +
+                '" hegiht="350" width="350"/>' + '</a>' + '<a href="bookDetails?id=' + bookID + '" onclick="#bookDetails" class="card-title">' + naziv + '</a>' +
 
                 '<p class="card-text">' + autor + '</p>' + '<div class="card-text" style="text-indent: 6px;">' + '<span class="' + rate1 +
 
@@ -105,7 +105,7 @@
 
                 '<script src="js\function.js"></script>' + '<p class="card-text"><strong>' + cena + ' $' + '</strong></p>' + '<div class="clearfix">' +
 
-                '<a href="bookDetails.html?id=' + bookID + '" class="btn btn-primary" id="bookDetails" style="margin-right:6px;">Details</a>' +
+                '<a href="bookDetails?id=' + bookID + '" class="btn btn-primary" id="bookDetails" style="margin-right:6px;">Details</a>' +
 
                 '<a href="#" onclick="addToCart(\'' + bookID + '\')" class="btn btn-primary">Add to cart</a> </div>' + '<script src="js\bookDetails.js"></script>' + '</div> </div> </div>'
 

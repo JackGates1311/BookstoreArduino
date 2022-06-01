@@ -116,7 +116,7 @@ function bookInformation(ID)
 
                     '<button style="margin-right:6px;" onclick="addToCart(\'' + bookID + '\')" class="btn btn-primary mb-2">Add to cart</button>' +
 
-                    '<a href="editBookDetails.html?id=' + bookID +'" class="btn btn-primary mb-2">Edit</a> </div> </div>' + '<div class="col-lg-3 com-md-3 col-sm-0 col-xs-0 mb-4">' +
+                    '<a href="editBookDetails?id=' + bookID +'" class="btn btn-primary mb-2">Edit</a> </div> </div>' + '<div class="col-lg-3 com-md-3 col-sm-0 col-xs-0 mb-4">' +
 
                     '<b class="h2">Book description:</b>' + '<p></p>' + '<p class="lead">' + opis + '</p> </div> </div>'
 

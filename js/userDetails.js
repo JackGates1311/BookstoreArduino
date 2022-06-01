@@ -120,7 +120,7 @@ function editUserInformation(ID) {
 
                     '<button type="button" class="btn btn-primary float-right ml-2" id="btnSave" hidden>Save</button>' +
 
-                    '<a href="manageUsers.html" type="button" class="btn btn-secondary float-right" id="btnCancel" hidden>Cancel</a>' + '<p></p>'
+                    '<a href="manageUsers" type="button" class="btn btn-secondary float-right" id="btnCancel" hidden>Cancel</a>' + '<p></p>'
 
                 );
             }

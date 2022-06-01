@@ -10,7 +10,7 @@ $(document).ready(function () {
 
         rootRef.child(id).remove();
 
-        window.location.href = "index.html";
+        window.location.href = "index";
 
     });
 });

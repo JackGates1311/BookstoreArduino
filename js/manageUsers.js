@@ -25,7 +25,7 @@ $(document).ready(function () {
         
         '<td class="align-middle">' + email + '</td>' + '<td class="align-middle"' + '<div class="clearfix">' +
 
-        '<a href="userDetails.html?id=' + userID +'" class="btn btn-primary mb-2" style="margin-right:6px;">Details</a>' +
+        '<a href="userDetails?id=' + userID +'" class="btn btn-primary mb-2" style="margin-right:6px;">Details</a>' +
 
         '<a href="#" onclick="getInfo(\'' + userID + '\')" data-toggle="modal" data-target="#deleteConfirmation" class="btn btn-primary mb-2" style="margin-right:6px;">Remove</a>' + '</div> </td>' + '</tr>' 
 

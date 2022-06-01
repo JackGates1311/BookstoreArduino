@@ -12,7 +12,7 @@ function getInfo(ID) {
 
         rootRef.child(ID).remove();
 
-        window.location.href = "manageUsers.html";
+        window.location.href = "manageUsers";
     });
 
 
