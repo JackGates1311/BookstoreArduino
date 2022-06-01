@@ -1,92 +1,92 @@
 ﻿<!DOCTYPE html>
 
-<html lang="sr">
+<html lang='sr'>
 
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
 
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Ranchers&display=swap" rel="stylesheet">
+    <link rel='preconnect' href='https://fonts.gstatic.com'>
+    <link href='https://fonts.googleapis.com/css2?family=Ranchers&display=swap' rel='stylesheet'>
 
     <title>Book details</title>
-    <link rel="shortcut icon" type="image/jpg" href="imgs/favicon.png" />
+    <link rel='shortcut icon' type='image/png' href='https://icons.iconarchive.com/icons/google/noto-emoji-objects/128/62863-books-icon.png'/>
 
 
-    <link rel="stylesheet" type="text/css" href="bootstrap/bootstrap.css">     <!-- Bootstrap 4 Style -->
+    <link rel='stylesheet' type='text/css' href='https://cdn.jsdelivr.net/gh/JackGates1311/web-dizajn-projekat@875f55b262f7fe7c36231c080d44f618057a5937/bootstrap/bootstrap.css'>     <!-- Bootstrap 4 Style -->
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
-    <script src="bootstrap_js/bootstrap.min.js"></script>
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
+    <script src='https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js'></script>
+    <script src='https://cdn.jsdelivr.net/gh/JackGates1311/web-dizajn-projekat@875f55b262f7fe7c36231c080d44f618057a5937/bootstrap_js/bootstrap.min.js'></script>
 
-    <scrpit src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.3/dist/jquery.validate.js"></scrpit> <!-- JQuery Validation Library -->
+    <scrpit src='https://cdn.jsdelivr.net/npm/jquery-validation@1.19.3/dist/jquery.validate.js'></scrpit> <!-- JQuery Validation Library -->
 
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"> <!-- Google Material Icons-->
+    <link rel='stylesheet' href='https://fonts.googleapis.com/icon?family=Material+Icons'> <!-- Google Material Icons-->
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">     <!-- Font Awesome Icon Library -->
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>     <!-- Font Awesome Icon Library -->
 
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel='stylesheet' type='text/css' href='https://cdn.jsdelivr.net/gh/JackGates1311/web-dizajn-projekat@875f55b262f7fe7c36231c080d44f618057a5937/css/style.css'>
 
 </head>
 
-<body onload="getID()">
+<body onload='getID()'>
 
     <!-- The core Firebase JS SDK is always required and must be listed first -->
-    <script src="https://www.gstatic.com/firebasejs/8.2.2/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/8.2.2/firebase-database.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/8.2.2/firebase-auth.js"></script>
+    <script src='https://www.gstatic.com/firebasejs/8.2.2/firebase-app.js'></script>
+    <script src='https://www.gstatic.com/firebasejs/8.2.2/firebase-database.js'></script>
+    <script src='https://www.gstatic.com/firebasejs/8.2.2/firebase-auth.js'></script>
 
     <!-- TODO: Add SDKs for Firebase products that you want to use
          https://firebase.google.com/docs/web/setup#available-libraries -->
 
-    <script src="js/firebase.js"></script>
-    <script src="js/validateDataRegister.js"></script>
-    <script src="js/validateDataLogin.js"></script>
-    <script src="js/orderList.js"></script>
+    <script src='https://cdn.jsdelivr.net/gh/JackGates1311/web-dizajn-projekat@875f55b262f7fe7c36231c080d44f618057a5937/js/firebase.js'></script>
+    <script src='https://cdn.jsdelivr.net/gh/JackGates1311/web-dizajn-projekat@875f55b262f7fe7c36231c080d44f618057a5937/js/validateDataRegister.js'></script>
+    <script src='https://cdn.jsdelivr.net/gh/JackGates1311/web-dizajn-projekat@875f55b262f7fe7c36231c080d44f618057a5937/js/validateDataLogin.js'></script>
+    <script src='https://cdn.jsdelivr.net/gh/JackGates1311/web-dizajn-projekat@875f55b262f7fe7c36231c080d44f618057a5937/js/orderList.js'></script>
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary mb-3  py-md-0">
+    <nav class='navbar navbar-expand-lg navbar-dark bg-primary mb-3  py-md-0'>
 
-        <div class="container-fluid">
+        <div class='container-fluid'>
 
-            <a href="index.html" class="navbar-brand mr-3">
-                <img id="logoImg" src="imgs/logoNew.png" alt="Knjižara AS">
+            <a href='index.html' class='navbar-brand mr-3'>
+                <img id='logoImg' src='https://icons.iconarchive.com/icons/google/noto-emoji-objects/128/62863-books-icon.png' alt='Bookstore'>
             </a>
 
-            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-                <span class="navbar-toggler-icon">
+            <button type='button' class='navbar-toggler' data-toggle='collapse' data-target='#navbarCollapse'>
+                <span class='navbar-toggler-icon'>
                 </span>
             </button>
 
-            <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class='collapse navbar-collapse' id='navbarCollapse'>
 
-                <div class="navbar-nav ml-auto">
+                <div class='navbar-nav ml-auto'>
                     <!-- For desktop version of website-->
 
-                    <a href="orderList.html" onclick="getBooks()" class="nav-item nav-link d-none d-lg-block">
-                        <span class="material-icons" data-toggle="tooltip" title="Cart items">local_grocery_store</span>
+                    <a href='orderList.html' onclick='getBooks()' class='nav-item nav-link d-none d-lg-block'>
+                        <span class='material-icons' data-toggle='tooltip' title='Cart items'>local_grocery_store</span>
                     </a>
-                    <a href="manageUsers.html" class="nav-item nav-link d-none d-lg-block">
-                        <span class="material-icons" data-toggle="tooltip" title="Manage users">supervisor_account</span>
+                    <a href='manageUsers.html' class='nav-item nav-link d-none d-lg-block'>
+                        <span class='material-icons' data-toggle='tooltip' title='Manage users'>supervisor_account</span>
                     </a>
-                    <a href="#" class="nav-item nav-link d-none d-lg-block" data-toggle="modal" data-target="#userLogin">
-                        <span class="material-icons" data-toggle="tooltip" title="Login">person</span>
+                    <a href='#' class='nav-item nav-link d-none d-lg-block' data-toggle='modal' data-target='#userLogin'>
+                        <span class='material-icons' data-toggle='tooltip' title='Login'>person</span>
                     </a>
-                    <a href="#" class="nav-item nav-link d-none d-lg-block" data-toggle="modal" data-target="#userRegistration">
-                        <span class="material-icons" data-toggle="tooltip" title="Register">person_add</span>
+                    <a href='#' class='nav-item nav-link d-none d-lg-block' data-toggle='modal' data-target='#userRegistration'>
+                        <span class='material-icons' data-toggle='tooltip' title='Register'>person_add</span>
                     </a>
 
                     <!-- For mobile version of website-->
-                    <a href="orderList.html" onclick="getBooks()" class="nav-item nav-link d-lg-none">
+                    <a href='orderList.html' onclick='getBooks()' class='nav-item nav-link d-lg-none'>
                         Cart items
                     </a>
-                    <a href="manageUsers.html" class="nav-item nav-link d-lg-none">
+                    <a href='manageUsers.html' class='nav-item nav-link d-lg-none'>
                         Manage users
                     </a>
-                    <a href="#" class="nav-item nav-link d-lg-none" data-toggle="modal" data-target="#userLogin">
+                    <a href='#' class='nav-item nav-link d-lg-none' data-toggle='modal' data-target='#userLogin'>
                         Login
                     </a>
-                    <a href="#" class="nav-item nav-link d-lg-none" data-toggle="modal" data-target="#userRegistration">
+                    <a href='#' class='nav-item nav-link d-lg-none' data-toggle='modal' data-target='#userRegistration'>
                         Register
                     </a>
 
@@ -98,97 +98,97 @@
         </div>
     </nav>
 
-    <div class="modal fade" id="userRegistration" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class='modal fade' id='userRegistration' tabindex='-1' role='dialog' aria-labelledby='exampleModalLabel' aria-hidden='true'>
 
-        <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class='modal-dialog modal-dialog-centered' role='document'>
 
-            <div class="modal-content">
+            <div class='modal-content'>
 
-                <div class="modal-header">
+                <div class='modal-header'>
 
-                    <h4 class="modal-title" id="exampleModalLabel">User registration: </h4>
+                    <h4 class='modal-title' id='exampleModalLabel'>User registration: </h4>
 
-                    <button type="button" id="cancelBtnModal" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
+                    <button type='button' id='cancelBtnModal' class='close' data-dismiss='modal' aria-label='Close'>
+                        <span aria-hidden='true'>&times;</span>
                     </button>
 
                 </div>
 
-                <div class="modal-body">
+                <div class='modal-body'>
 
-                    <form role="form" id="userRegistrationForm" method="POST">
+                    <form role='form' id='userRegistrationForm' method='POST'>
 
-                        <div class="form-row">
+                        <div class='form-row'>
 
-                            <div class="form-group col-md-6">
+                            <div class='form-group col-md-6'>
                                 <label>First name: </label>
-                                <input type="text" class="form-control" id="firstName" name="firstName" placeholder="First name">
+                                <input type='text' class='form-control' id='firstName' name='firstName' placeholder='First name'>
                             </div>
 
-                            <div class="form-group col-md-6">
+                            <div class='form-group col-md-6'>
                                 <label>Last name: </label>
-                                <input type="text" class="form-control" id="lastName" name="lastName" placeholder="Last name">
+                                <input type='text' class='form-control' id='lastName' name='lastName' placeholder='Last name'>
                             </div>
 
                         </div>
 
-                        <div class="form-group">
+                        <div class='form-group'>
                             <label>E-Mail: </label>
-                            <input type="text" class="form-control" id="emailAddress" name="emailAddress" placeholder="E-Mail">
+                            <input type='text' class='form-control' id='emailAddress' name='emailAddress' placeholder='E-Mail'>
                         </div>
 
-                        <div class="form-group">
+                        <div class='form-group'>
                             <label>Mobile number: </label>
-                            <input type="text" class="form-control" id="mobile" name="mobile" placeholder="Mobile number">
+                            <input type='text' class='form-control' id='mobile' name='mobile' placeholder='Mobile number'>
                         </div>
 
-                        <div class="form-group">
+                        <div class='form-group'>
                             <label>Address: </label>
-                            <input type="text" class="form-control" id="address" name="address" placeholder="Address">
+                            <input type='text' class='form-control' id='address' name='address' placeholder='Address'>
                         </div>
 
                         <label>Date of birth:</label>
 
-                        <div class="form-row">
+                        <div class='form-row'>
 
-                            <div class="form-group col-md-4">
-                                <input type="text" class="form-control" id="dayOfBirth" name="dayOfBirth" placeholder="Day">
+                            <div class='form-group col-md-4'>
+                                <input type='text' class='form-control' id='dayOfBirth' name='dayOfBirth' placeholder='Day'>
                             </div>
 
-                            <div class="form-group col-md-4">
-                                <select class="form-control" id="monthOfBirth" name="monthOfBirth">
-                                    <option value="" hidden>Month</option>
-                                    <option value="1">January</option>
-                                    <option value="2">February</option>
-                                    <option value="3">March</option>
-                                    <option value="4">April</option>
-                                    <option value="5">May</option>
-                                    <option value="6">June</option>
-                                    <option value="7">July</option>
-                                    <option value="8">August</option>
-                                    <option value="9">September</option>
-                                    <option value="10">October</option>
-                                    <option value="11">November</option>
-                                    <option value="12">December</option>
+                            <div class='form-group col-md-4'>
+                                <select class='form-control' id='monthOfBirth' name='monthOfBirth'>
+                                    <option value='' hidden>Month</option>
+                                    <option value='1'>January</option>
+                                    <option value='2'>February</option>
+                                    <option value='3'>March</option>
+                                    <option value='4'>April</option>
+                                    <option value='5'>May</option>
+                                    <option value='6'>June</option>
+                                    <option value='7'>July</option>
+                                    <option value='8'>August</option>
+                                    <option value='9'>September</option>
+                                    <option value='10'>October</option>
+                                    <option value='11'>November</option>
+                                    <option value='12'>December</option>
                                 </select>
                             </div>
 
-                            <div class="form-group col-md-4">
-                                <input type="text" class="form-control" id="yearOfBirth" name="yearOfBirth" placeholder="Year">
+                            <div class='form-group col-md-4'>
+                                <input type='text' class='form-control' id='yearOfBirth' name='yearOfBirth' placeholder='Year'>
                             </div>
 
                         </div>
 
-                        <div class="form-row">
+                        <div class='form-row'>
 
-                            <div class="form-group col-md-6">
+                            <div class='form-group col-md-6'>
                                 <label>Username: </label>
-                                <input type="text" class="form-control" id="userName" name="username" placeholder="Username">
+                                <input type='text' class='form-control' id='userName' name='username' placeholder='Username'>
                             </div>
 
-                            <div class="form-group col-md-6">
+                            <div class='form-group col-md-6'>
                                 <label>Password: </label>
-                                <input type="password" class="form-control" id="password" name="password" placeholder="Password">
+                                <input type='password' class='form-control' id='password' name='password' placeholder='Password'>
                             </div>
 
                         </div>
@@ -197,9 +197,9 @@
 
                 </div>
 
-                <div class="modal-footer">
-                    <button type="button" id="cancelBtn" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
-                    <button type="button" id="registerBtn" class="btn btn-primary" onclick="">Register</button>
+                <div class='modal-footer'>
+                    <button type='button' id='cancelBtn' class='btn btn-secondary' data-dismiss='modal'>Cancel</button>
+                    <button type='button' id='registerBtn' class='btn btn-primary' onclick=''>Register</button>
                 </div>
 
             </div>
@@ -207,42 +207,42 @@
         </div>
     </div>
 
-    <div class="modal fade" id="userLogin" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class='modal fade' id='userLogin' tabindex='-1' role='dialog' aria-labelledby='exampleModalLabel' aria-hidden='true'>
 
-        <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class='modal-dialog modal-dialog-centered' role='document'>
 
-            <div class="modal-content">
+            <div class='modal-content'>
 
-                <div class="modal-header">
+                <div class='modal-header'>
 
-                    <h4 class="modal-title" id="exampleModalLabel">User login: </h4>
+                    <h4 class='modal-title' id='exampleModalLabel'>User login: </h4>
 
-                    <button type="button" class="close" id="cancelBtnLoginModal" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
+                    <button type='button' class='close' id='cancelBtnLoginModal' data-dismiss='modal' aria-label='Close'>
+                        <span aria-hidden='true'>&times;</span>
                     </button>
 
                 </div>
 
-                <div class="modal-body">
+                <div class='modal-body'>
 
-                    <form action="#" id="userLoginForm">
+                    <form action='#' id='userLoginForm'>
 
-                        <div class="form-group">
+                        <div class='form-group'>
                             <label>Username: </label>
-                            <input type="text" class="form-control" id="loginUsername" name="loginUsername" placeholder="Username">
+                            <input type='text' class='form-control' id='loginUsername' name='loginUsername' placeholder='Username'>
                         </div>
 
-                        <div class="form-group">
+                        <div class='form-group'>
                             <label>Password: </label>
-                            <input type="password" class="form-control" id="loginPassword" name="loginPassword" placeholder="Password">
+                            <input type='password' class='form-control' id='loginPassword' name='loginPassword' placeholder='Password'>
                         </div>
 
-                        <div class="form-group">
-                            <div class="custom-control custom-checkbox my-1 mr-sm-2">
-                                <input type="checkbox" class="custom-control-input" id="customControlInline">
-                                <label class="custom-control-label" for="customControlInline" onclick="showPassword()">Show password</label>
+                        <div class='form-group'>
+                            <div class='custom-control custom-checkbox my-1 mr-sm-2'>
+                                <input type='checkbox' class='custom-control-input' id='customControlInline'>
+                                <label class='custom-control-label' for='customControlInline' onclick='showPassword()'>Show password</label>
 
-                                <script src="js\function.js"></script>
+                                <script src='js\function.js'></script>
                             </div>
                         </div>
 
@@ -252,9 +252,9 @@
 
                 </div>
 
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" id="cancelBtnLogin" data-dismiss="modal">Cancel</button>
-                    <button type="button" id="loginBtn" class="btn btn-primary">Login</button>
+                <div class='modal-footer'>
+                    <button type='button' class='btn btn-secondary' id='cancelBtnLogin' data-dismiss='modal'>Cancel</button>
+                    <button type='button' id='loginBtn' class='btn btn-primary'>Login</button>
                 </div>
 
             </div>
@@ -262,37 +262,37 @@
         </div>
     </div>
 
-    <div class="modal" id="rateBook" tabindex="-1" role="dialog">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h4 class="modal-title" id="exampleModalLongTitle">Rate book:</h4>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
+    <div class='modal' id='rateBook' tabindex='-1' role='dialog'>
+        <div class='modal-dialog modal-dialog-centered' role='document'>
+            <div class='modal-content'>
+                <div class='modal-header'>
+                    <h4 class='modal-title' id='exampleModalLongTitle'>Rate book:</h4>
+                    <button type='button' class='close' data-dismiss='modal' aria-label='Close'>
+                        <span aria-hidden='true'>&times;</span>
                     </button>
 
                 </div>
-                <div class="modal-body">
+                <div class='modal-body'>
                     <p> Your rate for this book is:</p>
-                    <span class="fa fa-star" id="star1" onclick="add(this,1)"></span>
-                    <span class="fa fa-star" id="star2" onclick="add(this,2)"></span>
-                    <span class="fa fa-star" id="star3" onclick="add(this,3)"></span>
-                    <span class="fa fa-star" id="star4" onclick="add(this,4)"></span>
-                    <span class="fa fa-star" id="star5" onclick="add(this,5)"></span>
+                    <span class='fa fa-star' id='star1' onclick='add(this,1)'></span>
+                    <span class='fa fa-star' id='star2' onclick='add(this,2)'></span>
+                    <span class='fa fa-star' id='star3' onclick='add(this,3)'></span>
+                    <span class='fa fa-star' id='star4' onclick='add(this,4)'></span>
+                    <span class='fa fa-star' id='star5' onclick='add(this,5)'></span>
                 </div>
-                <div class="modal-footer" id="btnModalConfirmation">
-                    <button type="button" id="btnClose" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
-                    <button type="button" id="btnRate" onclick="confirmRate()" class="btn btn-primary">Rate</button>
+                <div class='modal-footer' id='btnModalConfirmation'>
+                    <button type='button' id='btnClose' class='btn btn-secondary' data-dismiss='modal'>Cancel</button>
+                    <button type='button' id='btnRate' onclick='confirmRate()' class='btn btn-primary'>Rate</button>
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="container-fluid" id="bookDetailsContainer">
+    <div class='container-fluid' id='bookDetailsContainer'>
 
-        <div class="row" id="bookDetails">
+        <div class='row' id='bookDetails'>
 
-            <script src="js/bookDetails.js "></script>
+            <script src='https://cdn.jsdelivr.net/gh/JackGates1311/web-dizajn-projekat@875f55b262f7fe7c36231c080d44f618057a5937/js/bookDetails.js '></script>
 
         </div>
     </div>
