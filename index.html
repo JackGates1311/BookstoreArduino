@@ -14,7 +14,7 @@
     <title>Bookstore</title>
     <link rel='shortcut icon' type='image/png' href='https://icons.iconarchive.com/icons/google/noto-emoji-objects/128/62863-books-icon.png'/>
 
-    <link rel='stylesheet' type='text/css' href='https://cdn.jsdelivr.net/gh/JackGates1311/web-dizajn-projekat@875f55b262f7fe7c36231c080d44f618057a5937/bootstrap/bootstrap.css'>
+    <link rel='stylesheet' type='text/css' href='https://cdn.jsdelivr.net/gh/JackGates1311/web-dizajn-projekat@4ff07377e84a495e7bf2f9bd78568e033613600e/bootstrap/bootstrap.css'>
 
     <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
     <script src='https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js'></script>
@@ -26,7 +26,7 @@
 
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>     <!-- Font Awesome Icon Library -->
 
-    <link rel='stylesheet' type='text/css' href='https://cdn.jsdelivr.net/gh/JackGates1311/web-dizajn-projekat@875f55b262f7fe7c36231c080d44f618057a5937/css/style.css'>
+    <link rel='stylesheet' type='text/css' href='https://cdn.jsdelivr.net/gh/JackGates1311/web-dizajn-projekat@4ff07377e84a495e7bf2f9bd78568e033613600e/css/style.css'>
 
 
 </head>
@@ -41,18 +41,18 @@
     <!-- TODO: Add SDKs for Firebase products that you want to use
          https://firebase.google.com/docs/web/setup#available-libraries -->
 
-    <script src='https://cdn.jsdelivr.net/gh/JackGates1311/web-dizajn-projekat@875f55b262f7fe7c36231c080d44f618057a5937/js/firebase.js'></script>
-    <script src='https://cdn.jsdelivr.net/gh/JackGates1311/web-dizajn-projekat@875f55b262f7fe7c36231c080d44f618057a5937/js/bookDetails.js'></script>
-    <script src='https://cdn.jsdelivr.net/gh/JackGates1311/web-dizajn-projekat@875f55b262f7fe7c36231c080d44f618057a5937/js/validateDataRegister.js'></script>
-    <script src='https://cdn.jsdelivr.net/gh/JackGates1311/web-dizajn-projekat@875f55b262f7fe7c36231c080d44f618057a5937/js/validateDataLogin.js'></script>
-    <script src='https://cdn.jsdelivr.net/gh/JackGates1311/web-dizajn-projekat@875f55b262f7fe7c36231c080d44f618057a5937/js/orderList.js'></script>
-    <script src='https://cdn.jsdelivr.net/gh/JackGates1311/web-dizajn-projekat@875f55b262f7fe7c36231c080d44f618057a5937/js/searchBooks.js'></script>
+    <script src='https://cdn.jsdelivr.net/gh/JackGates1311/web-dizajn-projekat@4ff07377e84a495e7bf2f9bd78568e033613600e/js/firebase.js'></script>
+    <script src='https://cdn.jsdelivr.net/gh/JackGates1311/web-dizajn-projekat@4ff07377e84a495e7bf2f9bd78568e033613600e/js/bookDetails.js'></script>
+    <script src='https://cdn.jsdelivr.net/gh/JackGates1311/web-dizajn-projekat@4ff07377e84a495e7bf2f9bd78568e033613600e/js/validateDataRegister.js'></script>
+    <script src='https://cdn.jsdelivr.net/gh/JackGates1311/web-dizajn-projekat@4ff07377e84a495e7bf2f9bd78568e033613600e/js/validateDataLogin.js'></script>
+    <script src='https://cdn.jsdelivr.net/gh/JackGates1311/web-dizajn-projekat@4ff07377e84a495e7bf2f9bd78568e033613600e/js/orderList.js'></script>
+    <script src='https://cdn.jsdelivr.net/gh/JackGates1311/web-dizajn-projekat@4ff07377e84a495e7bf2f9bd78568e033613600e/js/searchBooks.js'></script>
 
     <nav class='navbar navbar-expand-lg navbar-dark bg-primary mb-3  py-md-0'>
 
         <div class='container-fluid'>
 
-            <a href='index.html' class='navbar-brand mr-3'>
+            <a href='index' class='navbar-brand mr-3'>
                 <img id='logoImg' src='https://icons.iconarchive.com/icons/google/noto-emoji-objects/128/62863-books-icon.png' alt='Bookstore'>
                 <!--<span class='material-icons'>menu_book</span>-->
             </a>
@@ -79,10 +79,10 @@
                 <div class='navbar-nav ml-auto'>
                     <!-- For desktop version of website-->
 
-                    <a href='orderList.html' onclick='getBooks()' class='nav-item nav-link d-none d-lg-block'>
+                    <a href='orderList' onclick='getBooks()' class='nav-item nav-link d-none d-lg-block'>
                         <span class='material-icons' data-toggle='tooltip' title='Cart items'>local_grocery_store</span>
                     </a>
-                    <a href='manageUsers.html' class='nav-item nav-link d-none d-lg-block'>
+                    <a href='manageUsers' class='nav-item nav-link d-none d-lg-block'>
                         <span class='material-icons' data-toggle='tooltip' title='Manage users'>supervisor_account</span>
                     </a>
                     <a href='#' class='nav-item nav-link d-none d-lg-block' data-toggle='modal' data-target='#userLogin'>
@@ -93,10 +93,10 @@
                     </a>
 
                     <!-- For mobile version of website-->
-                    <a href='orderList.html' onclick='getBooks()' class='nav-item nav-link d-sm-none d-md-block d-lg-none'>
+                    <a href='orderList' onclick='getBooks()' class='nav-item nav-link d-sm-none d-md-block d-lg-none'>
                         Cart items
                     </a>
-                    <a href='manageUsers.html' class='nav-item nav-link d-sm-none d-md-block d-lg-none'>
+                    <a href='manageUsers' class='nav-item nav-link d-sm-none d-md-block d-lg-none'>
                         Manage users
                     </a>
                     <a href='#' class='nav-item nav-link d-sm-none d-md-block d-lg-none' data-toggle='modal' data-target='#userLogin'>
@@ -282,7 +282,7 @@
 
         <div class='row' id='books'>
 
-            <script src='https://cdn.jsdelivr.net/gh/JackGates1311/web-dizajn-projekat@875f55b262f7fe7c36231c080d44f618057a5937/js/bookInfoMain.js'></script>
+            <script src='https://cdn.jsdelivr.net/gh/JackGates1311/web-dizajn-projekat@4ff07377e84a495e7bf2f9bd78568e033613600e/js/bookInfoMain.js'></script>
 
         </div>
 
