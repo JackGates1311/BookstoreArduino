@@ -1,8 +1,8 @@
 #include <ESP8266WiFi.h>
 #include <ESP8266WebServer.h>
 
-#define WIFI_SSID "Yettel_F97D8C"
-#define WIFI_PASS "yPRTDFPE"
+#define WIFI_SSID "HUAWEI Y7 2019"
+#define WIFI_PASS "fastnetwork"
 
 // When you creating a HTML file, avoid using "" quotes (replace it with single quotes)
 // Before pasting your HTML file, you must minify your HTML file first (you can do that on https://www.willpeavy.com/tools/minifier/)
@@ -36,7 +36,7 @@ void manageUsersPage() {
  
   //webserver.send(200, "text/html", HTML_MANAGE_USERS);
 
-  webserver.send(200, "text/plain", "Error 403: Forbidden");
+  webserver.send(403, "text/plain", "Error 403: Forbidden");
 }
 
 void userDetailsPage() {
@@ -45,7 +45,7 @@ void userDetailsPage() {
 
   //webserver.send(200, "text/html", HTML_USER_DETAILS);
 
-  webserver.send(200, "text/plain", "Error 403: Forbidden");
+  webserver.send(403, "text/plain", "Error 403: Forbidden");
 }
 
 void userOrderPage() {
@@ -59,7 +59,7 @@ void notfoundPage(){
 }
 
 void setup() {
-  
+
   Serial.begin(115200);
   Serial.println();
 
@@ -90,7 +90,7 @@ void setup() {
 }
 
 void loop() {
-
+  
   // Listens HTTP requests
   
   webserver.handleClient(); 

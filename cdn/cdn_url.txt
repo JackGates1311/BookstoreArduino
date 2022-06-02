@@ -1,0 +1,3 @@
+https://cdn.jsdelivr.net/gh/{github_username}/{repo}@{commit_id}/{path}
+
+https://cdn.jsdelivr.net/gh/JackGates1311/web-dizajn-projekat@{etetetet352532543}/js/bookInfoMain.js
